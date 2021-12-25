@@ -1,0 +1,27 @@
+div {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    margin-left: 50px;
+
+}
+
+.caja1 {
+    color: whitesmoke;
+    background: linear-gradient(to bottom, green, yellow);
+    box-shadow: 5px 5px 5px black;
+    padding: 9px;
+    box-sizing: border-box;
+
+}
+
+
+.caja2 {
+    color: whitesmoke;
+    background: linear-gradient(90deg, rgba(0,0,255,1) 35%, rgba(255,0,0,1) 100%);
+    box-shadow: 5px 5px 5px black;
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 20px 0 0 0;
+}

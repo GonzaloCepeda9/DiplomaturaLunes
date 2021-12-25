@@ -1,0 +1,28 @@
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+h1, h2 {
+    border-radius: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+i {
+    font-size: 48px;
+}
+
+p {
+    column-count: 3;
+    column-gap: 48px;
+    column-rule: 1px dashed black;
+}
+
+img {
+    border-radius: 0px 48px;
+    box-shadow: 14px 14px 7px black;
+}

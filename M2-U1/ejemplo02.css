@@ -1,0 +1,8 @@
+.texto {
+    background: yellow;
+    column-count: 5;
+    padding: 9px;
+    border: 1px solid black;
+    column-gap: 9px;
+    column-rule: 1px dashed black;
+}
