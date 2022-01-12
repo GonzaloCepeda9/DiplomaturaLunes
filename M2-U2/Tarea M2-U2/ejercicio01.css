@@ -2,42 +2,31 @@
     width: 450px;
     height: 450px;
     border: 2px solid black;
-    color: white;
-    position: relative;
-    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+
+.item {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rojo {
-    width: 150px;
-    height: 150px;
     background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0px;
+    color: white
 }
 
 .azul {
-    width: 150px;
-    height: 150px;
     background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0px;
-    top: 150px;
+    color: white
 }
 
 .verde {
-    width: 150px;
-    height: 150px;
     background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
+    color: white
 }
