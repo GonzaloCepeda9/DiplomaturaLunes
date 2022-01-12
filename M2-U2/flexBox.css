@@ -1,0 +1,13 @@
+.contenedor {
+    background-color: blue;
+    display: flex; /*ocupa todo el espacio del body, sirve para poder posicionarlos*/
+    display: inline-flex; /*ocupa el espacio de las cajas mas los bordes, margin, etc*/
+}
+
+.item {
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 30px;
+}

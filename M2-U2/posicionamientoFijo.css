@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+}
+
+#fijo {
+    background-color: #999;
+    position: fixed;
+    top: 0px; /*es necesario aclarar desde qué posición quedará fijo, en este caso, top 0*/
+    width: 100%;
+    height: 60px;
+}
+
+
+#texto {
+    background-color: yellow;
+    margin-top: 60px;
+}

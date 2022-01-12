@@ -1,0 +1,19 @@
+.contenedor {
+    background-color: blue;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    /* align-items: baseline; */
+}
+
+.item {
+    background-color: #ccc;
+    width: 100px;
+    /* height: 100px; */
+    margin: 10px;
+    font-size: 30px;
+}

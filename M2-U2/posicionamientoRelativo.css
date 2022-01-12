@@ -1,0 +1,38 @@
+#contenedor {
+    height: 500px;
+    width: 60%;
+    background-color: #999;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+}
+
+#verde {
+    height: 20%;
+    width: 94%;
+    border: 1px solid black;
+    background-color: green;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+#celeste {
+    height: 20%;
+    width: 94%;
+    border: 1px solid black;
+    background-color: lightblue;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#amarillo {
+    height: 20%;
+    width: 94%;
+    border: 1px solid black;
+    background-color: yellow;
+    margin: auto;
+    margin-top: 20px;
+}

@@ -1,0 +1,32 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+div:hover {
+    background-color: blue;
+    color: white;
+}
+
+span {
+    background-color: yellow;
+    padding: 9px;
+}
+
+span::before {
+    content: "Antes";
+    background-color: darkblue;
+    color: white;
+}
+
+span::after {
+    content: "Después";
+    background-color: red;
+    color: white;
+}
+
+.parrafo::first-line {
+    color: darkgreen;
+}
