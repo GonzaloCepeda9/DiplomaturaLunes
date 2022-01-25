@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .caja {
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+
+            background-color: #555;
+            color: white;
+            font-size: 48px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: all 0.5s ease;
+            /*la propiedad transition se usa en el elemento base*/
+            /*"ease" se refiere al tipo de aceleración*/
+        }
+
+        .caja:hover {
+            box-shadow: inset 0 0 0 25px orange;
+            /*inset hace que, cuando se genere el recuadro, no ocupe más lugar
+            fuera de la caja, sino que lo haga hacia adentro*/
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">Box Shadow</div>
+</body>
+</html>

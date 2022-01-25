@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circulo{
+            /* background-color: red; */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation-name: MiAnimacion;
+            animation-duration: 5s;
+            animation-fill-mode: forwards; /*Esto hace que se quede con el último fotograma de la animación*/
+        }
+
+        @keyframes MiAnimacion {
+            form {background-color: white;}
+            to {background-color: red;}
+        }
+    </style>
+</head>
+<body>
+    <h2>Primer animación en CSS3</h2>
+    <div class="circulo"></div>
+</body>
+</html>
