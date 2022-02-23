@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        //ESTRUCTURAS DE CONTROL
+
+        //IF
+
+        var mostrarMensaje = "true";
+
+        if (mostrarMensaje) {
+            alert("Hola Curso");
+        }
+
+
+        //IF - ELSE
+
+        var edad = 18;
+
+        if (edad >= 18) {
+            alert("Eres mayor de edad");
+        }
+
+        else {
+            alert("Todavía eres menor de edad")
+        }
+
+
+        // //SWITCH
+
+        // switch (valor) {
+        //     case 1: document.write("Uno");
+        //     break;
+
+        //     case 2: document.write("Dos");
+        //     break;
+
+        //     case 3: document.write("Tres");
+        //     break;
+
+        //     case 4: document.write("Cuatro");
+        //     break;
+
+        //     case 5: document.write("Cinco");
+        //     break;
+
+        //     default: document.write("Debes ingresar un valor comprendido entre 1 y 5");
+        // }
+
+
+        //BUCLES
+
+        var mensaje = "Hola, estoy dentro de un bucle";
+
+        for (veces = 0; veces <= 4; veces++) { //Tiene la inicialización, condición y actualización dentro del paréntesis.
+            alert(mensaje);
+        }
+
+
+        //WHILE
+
+        var x;
+        var x = 1;
+
+        while (x <= 100) {                    //Tiene sólo la condición dentro del paréntesis, lo demás va dentro de los parámetros de ejecución.
+            document.write(x);
+            document.write("<br>");
+            x = x + 1;
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
