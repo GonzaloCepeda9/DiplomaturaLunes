@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+#principal {
+    height: 100vw;
+}
+
+.boton {
+    padding: 1em;
+    border: 1px solid black;
+    font-size: 12px;
+}
+
+.boton:hover {
+    background-color: #999;
+}
+
+.container {
+    text-align: center;   
+}
