@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomatura - M3-U4 - Ejercicio 01</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cuadrado azul" onclick="cambiarFondo('darkblue')"></div>
+        <div class="cuadrado rojo" onclick="cambiarFondo('red')"></div>
+        <div class="cuadrado gris" onclick="cambiarFondo('gray')"></div>
+    </div>
+    <style>
+        .contenedor {
+            display: flex;
+        }
+
+        .cuadrado {
+            height: 100px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .azul {
+            background-color: darkblue;
+        }
+
+        .rojo {
+            background-color: red;
+        }
+
+        .gris {
+            background-color: gray;
+        }
+
+
+    </style>
+    <script>
+        function cambiarFondo(color) {
+            document.querySelector("body").style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>

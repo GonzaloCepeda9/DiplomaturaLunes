@@ -1,11 +1,3 @@
-body {
-    margin: 0;
-}
-
-#principal {
-    height: 100vw;
-}
-
 .boton {
     padding: 1em;
     border: 1px solid black;
@@ -17,5 +9,30 @@ body {
 }
 
 .container {
-    text-align: center;   
+    text-align: center;
+}
+
+.boton {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.azul {
+    background-color: darkblue;
+    color: white;
+}
+
+.rojo {
+    background-color: red;
+    color: white;
+}
+
+.gris {
+    background-color: gray;
+    color: white;
+}
+
+.predeterminado {
+    background-color: white;
 }

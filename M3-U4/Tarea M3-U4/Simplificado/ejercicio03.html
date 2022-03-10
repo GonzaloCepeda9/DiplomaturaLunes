@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomatura - M3-U4 - Ejercicio 03</title>
+</head>
+<body>
+<script>
+
+    var alumnos = [
+            {
+        nombre: 'Juan Gomez',
+        nota: 7
+        }, {
+        nombre: 'Pedro Rodriguez',
+        nota: 4
+        }, {
+        nombre: 'Roxana García',
+        nota: 8
+        }, {
+        nombre: 'Luciano Lopez',
+        nota: 5
+        }, {
+        nombre: 'Fernanda Gimenez',
+        nota: 6
+        }, {
+        nombre: 'Florencia Martinez',
+        nota: 10
+        }, {
+        nombre: 'Raul Sanchez',
+        nota: 7
+        }, {
+        nombre: 'Sandra Figueroa',
+        nota: 8
+    }
+    ];
+        
+    var aprobados = alumnos.filter(function (alumno){
+        return alumno.nota >= 7;
+    })
+
+    console.log(aprobados);
+    console.log(`${aprobados.length} aprobados`);
+
+    for (var i = 0; i < aprobados.length; i++) {
+        document.write(`<p>Alumno: ${aprobados[i].nombre} - Nota: ${aprobados[i].nota}</p>`)
+    }
+
+    aprobados.forEach(a => document.write(`${a.nombre} - (${a.nota}) <br>`));
+
+</script>
+</body>
+</html>
