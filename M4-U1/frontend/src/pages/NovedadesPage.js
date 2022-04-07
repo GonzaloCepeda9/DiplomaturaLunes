@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/components/pages/NovedadesPage.css"
 
 function NovedadesPage (props) {
     return (
