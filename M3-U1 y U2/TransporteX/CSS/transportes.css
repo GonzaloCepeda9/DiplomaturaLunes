@@ -42,7 +42,6 @@ nav ul li a {
     text-decoration: none;
     text-align: center;
     display: block;
-    /* padding: 0.2em 0.4em;*/ /*si agrego esta propiedad, se rompe el nav */
 }
 
 nav ul li a:hover {
@@ -253,8 +252,6 @@ h2 {
 .galeria .foto:nth-child(5n+1) {
     margin-left: 0;
 }
-
-
 
 /*Fin de estilo de GALERÍA*/
 
