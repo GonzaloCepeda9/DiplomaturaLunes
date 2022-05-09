@@ -1,0 +1,23 @@
+<main class="holder">
+    <div class="historia">
+        <h2>Historia</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugit quisquam eaque vel rerum porro ea
+            debitis quibusdam distinctio atque culpa in, corrupti dolorem a, numquam cumque maiores impedit magni.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque minima necessitatibus expedita. Fugit
+            reprehenderit magni sed. Illum quibusdam necessitatibus maxime eos ipsam quis, corporis voluptate
+            perspiciatis sequi dolor, molestias numquam.</p>
+    </div>
+    <div class="staff">
+        <h2>Staff</h2>
+        <div class="personas">
+                {{#each nosotros}}
+            <div class="persona">
+                    <h5>{{nombre}} {{apellido}}</h5>
+                    <h6>{{puesto}}</h6>
+                    <p>{{descripcion}}</p>
+            </div>
+                {{/each}}
+        </div>
+    </div>
+</main>
