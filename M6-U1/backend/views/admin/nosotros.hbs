@@ -9,13 +9,19 @@
             perspiciatis sequi dolor, molestias numquam.</p>
     </div>
     <div class="staff">
-        <h2>Staff</h2>
+        <div class="encabezado">
+            <h2>Staff</h2>
+            <a class="btn btn-success" href="/admin/nosotros/incorporar"><i class="fa fa-plus" aria-hidden="true"></i> Incorporar al Staff</a>
+        </div>
         <div class="personas">
                 {{#each nosotros}}
             <div class="persona">
+                    <p>{{{imagen}}}</p>
                     <h5>{{nombre}} {{apellido}}</h5>
                     <h6>{{puesto}}</h6>
                     <p>{{descripcion}}</p>
+                    <a class="btn btn-secondary" href="/admin/nosotros/editar/{{id_staff}}">Editar<i class="fa fa-pencil"></i></a>
+                    <a class="btn btn-secondary" href="/admin/nosotros/borrar/{{id_staff}}">Borrar<i class="fa fa-trash"></i></a>
             </div>
                 {{/each}}
         </div>

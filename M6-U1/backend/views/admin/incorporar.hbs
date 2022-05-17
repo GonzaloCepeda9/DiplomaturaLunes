@@ -1,0 +1,27 @@
+<div class="container" style="marin-top: 100px">
+    <div class="row">
+        <form action="/admin/nosotros/incorporar" method="post" enctype="multipart/form-data">
+            <div class="mb-3 row">
+                <div class="col-sm-10">
+                    <label>Imagen: <input type="file" name="imagen" id="imagen"></label>
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Apellido" name="apellido">
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Puesto" name="puesto">
+                </div>
+                <div class="col-sm-10">
+                    <textarea type="text" class="form-control" placeholder="Descripción"  name="descripcion"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+        {{#if error}}
+            <p>No se pudo incorporar al staff.</p>
+        {{/if}}
+    </div>
+</div>

@@ -1,49 +1,56 @@
-import React from 'react';
-import "../styles/components/pages/NosotrosPage.css"
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import NosotrosItem from "../components/nosotros/NosotrosItem";
 
 const NosotrosPage = (props) => {
-    return (
-        <section className="holder">
-            <div class="historia">
-                <h2>Historia</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eum distinctio repudiandae facilis exercitationem accusantium, architecto error tempora est iusto quis, repellat maiores ducimus iure ipsum earum voluptatum corrupti molestiae.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eum distinctio repudiandae facilis exercitationem accusantium, architecto error tempora est iusto quis, repellat maiores ducimus iure ipsum earum voluptatum corrupti molestiae.</p>
-            </div>
-            <h2>Staff</h2>
-            <div className="personas">
-                <div className="persona">
-                    <img src="images/nosotros/nosotros1.jpg" width="75" alt="Juan"/>
-                    <h5>Juan Gómez</h5>
-                    <h6>Gerente general</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eum distinctio repudiandae facilis exercitationem accusantium, architecto error tempora est iusto quis, repellat maiores ducimus iure ipsum earum voluptatum corrupti molestiae.</p>
-                </div>
-                <div className="persona">
-                    <img src="images/nosotros/nosotros2.jpg" width="75" alt="Juan"/>
-                    <h5>Juan Gómez</h5>
-                    <h6>Gerente general</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eum distinctio repudiandae facilis exercitationem accusantium, architecto error tempora est iusto quis, repellat maiores ducimus iure ipsum earum voluptatum corrupti molestiae.</p>
-                </div>
-                <div className="persona">
-                    <img src="images/nosotros/nosotros3.jpg" width="75" alt="Juan"/>
-                    <h5>Juan Gómez</h5>
-                    <h6>Gerente general</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eum distinctio repudiandae facilis exercitationem accusantium, architecto error tempora est iusto quis, repellat maiores ducimus iure ipsum earum voluptatum corrupti molestiae.</p>
-                </div>
-                <div className="persona">
-                    <img src="images/nosotros/nosotros4.jpg" width="75" alt="Juan"/>
-                    <h5>Juan Gómez</h5>
-                    <h6>Gerente general</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eum distinctio repudiandae facilis exercitationem accusantium, architecto error tempora est iusto quis, repellat maiores ducimus iure ipsum earum voluptatum corrupti molestiae.</p>
-                </div>
-                <div className="persona">
-                    <img src="images/nosotros/nosotros5.jpg" width="75" alt="Juan"/>
-                    <h5>Juan Gómez</h5>
-                    <h6>Gerente general</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eum distinctio repudiandae facilis exercitationem accusantium, architecto error tempora est iusto quis, repellat maiores ducimus iure ipsum earum voluptatum corrupti molestiae.</p>
-                </div>
-            </div>
-        </section>
-    );
-}
+  const [loading, setLoading] = useState(false);
+  const [nosotros, setNosotros] = useState([]);
+
+  useEffect(() => {
+    const cargarNosotros = async () => {
+      setLoading(true);
+      const response = await axios.get("http://localhost:3000/api/nosotros");
+      setNosotros(response.data);
+      setLoading(false);
+    };
+
+    cargarNosotros();
+  }, []);
+
+  return (
+    <main className="holder">
+      <div className="historia">
+        <h2>Historia</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugit
+          quisquam eaque vel rerum porro ea debitis quibusdam distinctio atque
+          culpa in, corrupti dolorem a, numquam cumque maiores impedit magni.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugit
+          quisquam eaque vel rerum porro ea debitis quibusdam distinctio atque
+          culpa in, corrupti dolorem a, numquam cumque maiores impedit magni.
+        </p>
+      </div>
+      <div className="personas">
+      {loading ? (
+        <p>Cargando...</p>
+      ) : (
+        nosotros.map((item) => (
+          <NosotrosItem
+            key={item.id_staff}
+            imagen={item.imagen}
+            name={item.nombre}
+            surname={item.apellido}
+            marketStall={item.puesto}
+            description={item.descripcion}
+            // body={item.body}
+          />
+        ))
+      )}
+      </div>
+    </main>
+  );
+};
 
 export default NosotrosPage;

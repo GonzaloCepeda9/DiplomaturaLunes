@@ -16,6 +16,7 @@ var loginRouter = require("./routes/admin/login");
 var adminRouter = require("./routes/admin/novedades"); //adminRouter requiere de admin/novedades ?
 var nosotrosRouter = require("./routes/admin/nosotros");
 var apiRouter = require("./routes/api");
+// var apiRouter2 = require("./routes/api2");
 
 var app = express();
 
@@ -64,6 +65,7 @@ app.use("/admin/login", loginRouter);
 app.use("/admin/novedades", secured, adminRouter); //Cuando reciba /admin/novedades se realiza un proceso de autenticación y autorización. Si está logueado, muestra novedades, sino, vuelve a login.
 app.use("/admin/nosotros", secured, nosotrosRouter); //Igual al anterior, pero con sección nosotros
 app.use("/api", cors(), apiRouter);
+// app.use("/api2", cors(), apiRouter2);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

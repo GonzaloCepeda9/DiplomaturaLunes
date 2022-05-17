@@ -27,7 +27,7 @@ router.get('/', async function(req, res, next) {
     else {
       return {
         ...novedad,
-        imagen: "No carga la imagen"
+        imagen: "No se pudo cargar la imagen."
       }
     }
   });
@@ -79,17 +79,18 @@ router.post("/agregar", async (req, res, next) => {
   }
 });
 
-router.get("/agregar", (req, res, next) => {
-  res.render("admin/agregar", {
-    layout: "admin/layout"
-  })
-});
+  router.get("/agregar", (req, res, next) => {
+    res.render("admin/agregar", {
+      layout: "admin/layout"
+    })
+  });
 
 //Fin de AGREGAR Novedad
 
 //Inicio de ELIMINAR Novedad
 
 router.get("/eliminar/:id", async (req, res, next) => {
+  
   var id = req.params.id;
 
   let novedad = await novedadesModel.getNovedadById(id);
@@ -115,13 +116,10 @@ router.get("/modificar/:id", async (req, res, next) =>{
   })
 });
 
-//Fin de MODIFICAR Novedad
-
 //Modificar > Update
 
 router.post("/modificar", async (req, res, next) => {
   try {
-
     let img_id = req.body.img_original;
     let borrar_img_vieja = false;
 
@@ -160,4 +158,5 @@ router.post("/modificar", async (req, res, next) => {
   }
 });
 
+//Fin de MODIFICAR Novedad
 module.exports = router;

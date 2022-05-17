@@ -1,0 +1,33 @@
+<div class="container" style="marin-top: 100px">
+    <div class="row">
+        <h4>Editar staff</h4>
+        <form action="/admin/nosotros/editar" method="post" enctype="multipart/form-data">
+            <p>
+                <label>Imagen: <input type="file" name="imagen" id="imagen"/></label>
+            </p>
+            <p>
+                <label><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen actual</label>
+                <input type="hidden" name="img_original" value="{{persona.img_staff}}">
+            </p>
+            <input type="hidden" value="{{persona.id_staff}}" name="id_staff">
+            <div class="mb-3 row">
+                <div class="col-sm-10">
+                    <input type="text" value="{{persona.nombre}}" class="form-control" placeholder="Nombre" name="nombre">
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" value="{{persona.apellido}}" class="form-control" placeholder="Apellido" name="apellido">
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" value="{{persona.puesto}}" class="form-control" placeholder="Puesto" name="puesto">
+                </div>
+                <div class="col-sm-10">
+                    <textarea type="text" class="form-control" placeholder="Descripción"  name="descripcion">{{persona.descripcion}}</textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+        {{#if error}}
+            <p>No se pudo editar el staff.</p>
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,262 @@
+/* GENERAL */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h2 {
+    color: #2e64a1;
+    font-weight: 400;
+    margin: 0 0 1em;
+  }
+  
+  .holder {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+
+  header {
+    background-color: #2e64a1;
+    padding: 1em 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    bottom: 0.8em;
+    margin: 0;
+}
+
+  /* FOOTER */
+
+  footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    padding: 3em 0;
+    margin-top: 2em;
+}
+
+footer p {
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+
+  /* NAV */
+
+nav {
+    background-color: #6da9ed;
+    margin-bottom: 2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 25%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    position: relative;
+    /* padding: 0.2em 0.4em;*/ /*si agrego esta propiedad, se rompe el nav */
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.activo {
+    background-color: #4c76a5;
+}
+  /* HOME */
+
+.homeimg {
+    clear: both;
+    margin-bottom: 1.5em;
+}
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 2em;
+    float: left;
+}
+
+.bienvenidos, .testimonios {
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.bienvenidos p {
+    font-size: 1.3em;
+}
+
+.testimonios {
+    width: 25%;
+    float: right;
+}
+
+.testimonio {
+    background-color: #ccc;
+    padding: 1em;
+}
+
+.testimonio, .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+}
+
+.testimonio, .autor {
+    font-size: 0.7em;
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+} 
+
+  /* NOSOTROS */
+
+.historia p {
+    font-size: 0.8em;
+}
+
+.persona {
+    width: 18%;
+    float: left;
+    margin-left: 2.25%;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.persona img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin: 0.8em 0 1em;
+}
+
+.persona h5, .persona h6 {
+    font-weight: normal;
+    color: #2e64a1;
+    margin: 0;
+}
+
+.persona h5 {
+    font-size: 0.9em;
+}
+
+.persona h6 {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.persona p {
+    font-size: 0.7em;
+    margin: 0 1em 1em;
+    color: #444;
+}
+
+.persona:first-child {
+    margin-left: 0;
+} 
+
+  /* NOVEDADES */
+
+  /* CONTACTO */
+.columna {
+    width: 50%;
+    padding: 0.6em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.columna .contacto {
+    border-right: 1px solid #ddd;
+    float: left;
+}
+
+.izquierda {
+    float: left;
+    border-right: 1px solid #999;
+}
+
+.derecha {
+    float: right;
+}
+
+.derecha p {
+    font-size: 0.8em;
+}
+
+.derecha ul li {
+    font-size: 0.8em;
+} 
+
+.formulario label {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    font-size: 0.8em;
+}
+
+.formulario input, .formulario textarea {
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 0.8em;
+    padding: 0.4em 0.6em;
+    width: 90%;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 18em;
+}
+
+.acciones {
+    text-align: center;
+}
+
+.formulario input[type="submit"] {
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+}
